@@ -1,0 +1,10 @@
+{
+    "manifest_version":3,
+    "name": "MyData - Personal Data Tracker",
+    "version": "1.0",
+    "description":"Visualize your online data footprint and improve your privacy.",
+    "permissions":["tabs", "storage", "cookifes"],
+    "action":{
+        "default_popup":"popup.html"
+    }
+}
