@@ -1,10 +1,24 @@
 {
-    "manifest_version":3,
-    "name": "MyData - Personal Data Tracker",
-    "version": "1.0",
-    "description":"Visualize your online data footprint and improve your privacy.",
-    "permissions":["tabs", "storage", "cookifes"],
-    "action":{
-        "default_popup":"popup.html"
+  "manifest_version": 3,
+  "name": "MyData - Personal Data Tracker",
+  "version": "1.1",
+  "description": "Visualize your online data footprint and improve your privacy.",
+  "permissions": ["tabs", "storage", "cookies", "privacy", "notifications", "permissions"],
+  "host_permissions": ["<all_urls>"],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
     }
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  }
 }
