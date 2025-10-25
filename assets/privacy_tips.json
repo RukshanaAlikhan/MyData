@@ -1,0 +1,18 @@
+[
+  {
+    "condition": "high_cookies",
+    "tip": "Clear cookies frequently or use your browser’s privacy mode to limit persistent trackers."
+  },
+  {
+    "condition": "permissions",
+    "tip": "Revoke camera/microphone permissions for sites you no longer use."
+  },
+  {
+    "condition": "autofill",
+    "tip": "Turn off autofill for sensitive forms like credit cards or IDs."
+  },
+  {
+    "condition": "low_score",
+    "tip": "Install privacy extensions like uBlock Origin or Privacy Badger for better control."
+  }
+]
