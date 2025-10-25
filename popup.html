@@ -1,18 +1,32 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <title>MyData Dashboard</title>
-        <link rel="stylesheet" href="popup.css">
-    </head>
-    <body>
-        <div id="container">
-            <h1>MyData</h1>
-            <p>Your privacy companion is active</p>
-            <button id="checkData">Check My Data</button>
-            <p id="result"></p>
-        </div>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>MyData Dashboard</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div id="tabs">
+    <button id="tab-scan" class="active">Scan</button>
+    <button id="tab-dashboard">Dashboard</button>
+  </div>
 
-        <script src="popup.js"></script>
-    </body>
+  <!-- Scan View -->
+  <div id="scan-view" class="tab-content">
+    <h1>MyData</h1>
+    <p>Your privacy companion is active.</p>
+    <button id="checkData">Check My Data</button>
+    <p id="result"></p>
+  </div>
+
+  <!-- Dashboard View -->
+  <div id="dashboard-view" class="tab-content" style="display:none;">
+    <h2>Privacy Score History</h2>
+    <canvas id="scoreChart" width="250" height="150"></canvas>
+    <p id="noData" style="display:none;">No history yet — scan a site first!</p>
+  </div>
+
+  <script src="chart.js"></script>
+  <script src="popup.js"></script>
+</body>
 </html>
